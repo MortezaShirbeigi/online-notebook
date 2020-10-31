@@ -5,6 +5,7 @@ $theme-colors: (
 );
 
 $navbar-light-color: #02333a !default;
+$link-color: #02333a;
 
 //Start require for loading bootstrap styles
 @import "../../node_modules/bootstrap/scss/functions";
@@ -181,3 +182,18 @@ form {
 }
 
 // End note section
+
+// Start footer section
+
+.nav {
+  .nav-link {
+    margin: 0 1rem;
+    font-weight: bold;
+  }
+}
+
+.license {
+  font-size: 0.9rem;
+}
+
+// End footer section

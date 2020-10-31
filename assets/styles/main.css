@@ -6412,4 +6412,13 @@ form button:focus {
   text-decoration-style: double;
 }
 
+.nav .nav-link {
+  margin: 0 1rem;
+  font-weight: bold;
+}
+
+.license {
+  font-size: 0.9rem;
+}
+
 /*# sourceMappingURL=main.css.map */
