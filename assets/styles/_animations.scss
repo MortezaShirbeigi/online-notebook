@@ -1,0 +1,362 @@
+// Start animations
+
+// Start top text animation style
+
+#top-text {
+  animation: topTextAnimation 0.5s ease-in-out 1s forwards;
+  transform: translateY(40px);
+}
+
+@keyframes topTextAnimation {
+  0% {
+    transform: translateY(40px);
+  }
+  80% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+// End top text animation style
+
+// Start bottom text animation style
+
+#bottom-text {
+  animation: bottomTextAnimation 0.5s ease-in-out 1.3s forwards;
+  transform: translateY(-40px);
+}
+
+@keyframes bottomTextAnimation {
+  0% {
+    transform: translateY(-40px);
+  }
+  80% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+// Start top right leaf beginning
+
+#leaf1 {
+  animation: leaf1 1s ease-in-out forwards;
+}
+
+@keyframes leaf1 {
+  0% {
+    transform: translateY(40px) translateX(-80px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px) translateX(0px);
+  }
+}
+
+// End top right leaf beginning
+
+// Start bottom right leaf beginning
+
+#leaf2 {
+  animation: leaf2 1s ease-in-out forwards;
+}
+
+@keyframes leaf2 {
+  0% {
+    transform: translateY(-20px) translateX(-90px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px) translateX(0px);
+  }
+}
+
+// End bottom right leaf beginning
+
+// Start top left leaf beginning
+
+#leaf3 {
+  animation: leaf3 1s ease-in-out forwards;
+}
+
+@keyframes leaf3 {
+  0% {
+    transform: translateY(20px) translateX(90px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px) translateX(0px);
+  }
+}
+
+// End top left leaf beginning
+
+// Start bottom left leaf beginning
+
+#leaf4 {
+  animation: leaf4 1s ease-in-out forwards;
+}
+
+@keyframes leaf4 {
+  0% {
+    transform: translateY(-20px) translateX(90px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px) translateX(0px);
+  }
+}
+
+// End bottom left leaf beginning
+
+// Start top right leaf move
+
+#top-right-Leaf {
+  animation: topRightLeaf 4s ease-in-out 2s infinite alternate;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+@keyframes topRightLeaf {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(10deg) translateX(-5px);
+  }
+}
+
+// End top right leaf move
+
+// Start bottom right leaf move
+
+#bottom-right-Leaf {
+  animation: bottomRightLeaf 4.5s ease-in-out infinite alternate;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+@keyframes bottomRightLeaf {
+  0% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotateZ(10deg) translateX(-5px);
+  }
+}
+
+// End bottom right leaf move
+
+// Start top left leaf move
+
+#top-left-Leaf {
+  animation: topLeftLeaf 4.5s ease-in-out infinite alternate;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+@keyframes topLeftLeaf {
+  0% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotateZ(-10deg) translateX(5px);
+  }
+}
+
+// End top left leaf move
+
+// Start bottom left leaf move
+
+#bottom-left-Leaf {
+  animation: bottomLeftLeaf 5.3s ease-in-out infinite alternate;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+@keyframes bottomLeftLeaf {
+  0% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotateZ(-10deg) translateX(5px);
+  }
+}
+
+// End bottom left leaf move
+
+// Start right person
+
+#head {
+  animation: headRotate 6s ease-in-out infinite alternate;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+@keyframes headRotate {
+  0% {
+    transform: rotateZ(0) translateX(0px);
+  }
+  55% {
+    transform: rotateZ(-15deg) translateX(-5px);
+  }
+  57% {
+    transform: rotateZ(-15deg) translateX(-5px);
+  }
+  100% {
+    transform: rotateZ(0) translateX(0px);
+  }
+}
+
+// End right person
+
+// Start left person hand with laptop
+
+#Left-Hand-Laptop {
+  animation: leftHandLaptop 8s linear infinite alternate;
+}
+
+@keyframes leftHandLaptop {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-3px);
+  }
+  80% {
+    transform: translateY(-3px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+// End left person hand with laptop
+
+// Start left person right hand
+
+#right-hand {
+  animation: rightHand 8s linear infinite alternate;
+}
+
+@keyframes rightHand {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(3px);
+  }
+  80% {
+    transform: translateY(3px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+// End left person right hand
+
+// Start right paper plane
+
+#right-paper-plane {
+  animation: rightPaperPlane 10s infinite linear 2s;
+  transform-box: fill-box;
+  opacity: 0;
+}
+
+@keyframes rightPaperPlane {
+  0% {
+    transform: translateX(0) translateY(0px) scale(0.8);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  17% {
+    opacity: 1;
+  }
+  19% {
+    transform: translateX(-400px) translateY(100px) scale(1.5);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) translateY(0px) scale(0.8);
+    opacity: 0;
+  }
+}
+
+// End right paper plane
+
+// Start left paper plane
+
+#left-paper-plane {
+  animation: leftPaperPlane 12s infinite linear 3s;
+  transform-box: fill-box;
+  opacity: 0;
+}
+
+@keyframes leftPaperPlane {
+  0% {
+    transform: translateX(0) translateY(0px) scale(0.8);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  17% {
+    opacity: 1;
+  }
+  19% {
+    transform: translateX(400px) translateY(100px) scale(2);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) translateY(0px) scale(0.8);
+    opacity: 0;
+  }
+}
+
+// End left paper plane
+
+// start pen animation after send note
+
+.shaker {
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+// End pen animation after send note
+
+// End animations
