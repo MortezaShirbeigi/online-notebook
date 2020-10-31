@@ -3,6 +3,8 @@ $theme-colors: (
   "light": #f5f1e8,
 );
 
+$navbar-light-color: #02333a !default;
+
 //Start require for loading bootstrap styles
 @import "../../node_modules/bootstrap/scss/functions";
 @import "../../node_modules/bootstrap/scss/variables";
@@ -23,3 +25,32 @@ $theme-colors: (
 // Start my style from other files
 @import "../styles/font-face";
 // Start my style from other files
+
+// Start main style
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: map-get($theme-colors, light);
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Helvetica";
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+// End main style
+
+// Start header
+
+.nav-link > .fa {
+  font-size: 1.3rem;
+}
+
+// End header
